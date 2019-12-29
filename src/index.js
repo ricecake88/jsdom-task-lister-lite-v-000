@@ -22,7 +22,7 @@ function setColor(){
    let select_priority = document.createElement("select");
    priority_form.setAttribute("method", "POST");
    priority_form.setAttribute("name", "priorityForm")
-   priority_form("class", "priorityForm_class");
+   priority_form.setAttribute("class", "priorityForm_class");
    priority_form.appendChild(select_priority);
    select_priority.setAttribute("name", "dropdown");
    select_priority.setAttribute("id", Date.now())
