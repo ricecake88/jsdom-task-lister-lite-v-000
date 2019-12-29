@@ -13,7 +13,7 @@
    priority_form.setAttribute("name", "priorityForm")
    priority_form.appendChild(select_priority);
    select_priority.setAttribute("name", "dropdown");
-   select_priority.setAttribute("onchange", "this.priorityForm.submit()");
+   select_priority.setAttribute("onchange", "this.className.submit()");
    for (let i = 0; i < priorities.length; i++) {
       let option = document.createElement("option");
       option.value = priorities[i];
