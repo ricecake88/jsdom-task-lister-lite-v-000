@@ -63,9 +63,8 @@ function setColor(){
    let selects = document.getElementsByName("dropdown");
    console.log(selects);
    for (let i = 0; i < selects.length; i++) {
-     selects[i].addEventListener("change", function() {
-       color = setColor(this);
-     });
+     selects[i].addEventListener("change", setColor)
+     };
    }
    task = document.getElementById(task_item);
    task.style.color = color;
