@@ -6,6 +6,7 @@
 
 function setColor(task) {
  task_item = document.getElementById(task);
+ console.log(this)
  if (task_item)
   task_item.style.color = red;
 }
