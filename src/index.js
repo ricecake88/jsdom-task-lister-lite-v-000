@@ -4,8 +4,9 @@
    element.parentNode.parentNode.removeChild(element.parentNode)
  }
 
-function setColor() {
-  
+function setColor(task) {
+ task = document.getElementById(task);
+ task.value.styl
 }
 
  function createPriorityForm(unique_task_id) {
