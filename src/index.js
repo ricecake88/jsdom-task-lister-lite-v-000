@@ -32,30 +32,6 @@
    return priority_form;
  }
  
- function changeColor(task, priority) {
-   event.preventDefault()   
-   task = document.getElementById(task);
-   if (priority == "h") {
-    task.style.color = 'red';
-   } else if (priority == "m") {
-     task.style.color = 'green';
-   } else {
-     task.style.color = 'yellow';
-   }
- }
- 
- function editTask(element) {
-   
- }
- 
- function monitorTaskPriority(task_id) {
-  task = document.getElementById(task_id);
-  priorityForm = document.getElementById("priorityForm");
-  console.log(priorityForm);
-  priorityForm.addEventListener("submit", changeColor(task_id, priorityForm.value));   
- }
-
- 
  function createTask(task_list) {
    let new_task = document.createElement("li")
    let input = document.getElementById("new-task-description");   
@@ -69,7 +45,6 @@
      task_list.appendChild(new_task);
      input.value = "";
    }
-    monitorTaskPriority(new_task.id);
  }
 
  function submittedTask(event) {
