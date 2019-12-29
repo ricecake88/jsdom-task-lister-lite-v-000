@@ -14,6 +14,7 @@
    priority_form.appendChild(select_priority);
    select_priority.setAttribute("name", "dropdown");
    select_priority.setAttribute("onchange", "this.className=this.options[this.selectedIndex].className");
+   select_priority.setAttribute("class", "medium");
    for (let i = 0; i < priorities.length; i++) {
       let option = document.createElement("option");
       option.value = priorities[i];
