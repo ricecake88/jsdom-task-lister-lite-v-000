@@ -34,7 +34,7 @@ button {
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
-  border: 1px solid black;
+  width: 25%;
 }
 
 .low {
