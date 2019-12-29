@@ -57,7 +57,7 @@ function monitorPriority(){
  
  function monitorPriority(event) {
    event.preventDefault()
-   let selects = document.querySelector
+   let selects = document.getElementsByName("")
  }
 
 document.addEventListener("DOMContentLoaded", () => {
