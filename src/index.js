@@ -59,7 +59,7 @@ function monitorPriority(){
    event.preventDefault()
    let selects = document.getElementsByName("dropdown");
    for (let i = 0; i < selects.length; i++) {
-     selects[i].addEventListener("click")
+     selects[i].addEventListener("onchange")
    }
    
  }
