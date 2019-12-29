@@ -62,7 +62,7 @@ function setColor(){
  
  function monitorPriority(task_item) {
    let selects = document.getElementsByName("dropdown");
-   let task = document.getElementById(task_item);
+   task = document.getElementById(task_item);
    for (let i = 0; i < selects.length; i++) {
      selects[i].addEventListener("change", setColor);
    }
