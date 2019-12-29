@@ -4,6 +4,9 @@
    element.parentNode.parentNode.removeChild(element.parentNode)
  }
 
+function monitorPriority(){
+  
+}
 
  function createPriorityForm(unique_task_id) {
    event.preventDefault()
@@ -22,10 +25,8 @@
         option.text = "h";
       } else if (priorities[i] == "medium") {
         option.text = 'm';
-        option.setAttribute("class", "normal")
       } else if (priorities[i] == "low") {
         option.text = 'l';
-        option.setAttribute("class", "low")        
       }
       select_priority.appendChild(option); 
    }
