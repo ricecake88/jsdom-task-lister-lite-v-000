@@ -5,9 +5,9 @@ html {
 }
 
 body {
-  min-height: 100%;
-  min-width: 100%;
-  background: linear-gradient(pink, violet);
+  min-height: 75%;
+  min-width: 75%;
+  background: linear-gradient(azure, blue);
 }
 
 button {
@@ -31,7 +31,26 @@ button {
   margin: 10px;
   border: 1px solid #333;
   background: rgba(255, 255, 255, 0.75);
-  padding: 15px 20px 18px 18px;
+ padding: 15px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
+  width: 25%;
+}
+
+.low {
+  color: blue;
+}
+.high {
+  color: red;
+}
+.normal {
+  color: green;
+}
+
+.dropdown {
+  display: inline;
+}
+
+.priorityForm_class {
+  display: inline;
 }
