@@ -4,12 +4,6 @@
    element.parentNode.parentNode.removeChild(element.parentNode)
  }
 
-function setColor(task) {
- task_item = document.getElementById(task);
- console.log(this)
- if (task_item)
-  task_item.style.color = red;
-}
 
  function createPriorityForm(unique_task_id) {
    event.preventDefault()
@@ -21,13 +15,11 @@ function setColor(task) {
    priority_form.appendChild(select_priority);
    select_priority.setAttribute("name", "dropdown");
    select_priority.setAttribute("id", Date.now())
-   select_priority.setAttribute("class", "medium");
    for (let i = 0; i < priorities.length; i++) {
       let option = document.createElement("option");
       option.value = priorities[i];
       if (priorities[i] == "high") {
         option.text = "h";
-        option.setAttribute("class", "high");
       } else if (priorities[i] == "medium") {
         option.text = 'm';
         option.setAttribute("class", "normal")
