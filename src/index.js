@@ -45,7 +45,7 @@ function setColor(){
    let input = document.getElementById("new-task-description");   
    new_task.id = "task" + list_counter_id.toString(10);
    if (input.value !== "") {
-     const delete_task_html = '<button id=delete onclick="deleteTask(this);">x</button>';
+     const delete_task_html = ' <button id=delete onclick="deleteTask(this);">x</button>';
      const priority_form_html = createPriorityForm(new_task.id);
      new_task.innerHTML = priority_form_html.outerHTML + " " + input.value + delete_task_html;
      console.log(new_task);
