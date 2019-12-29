@@ -30,6 +30,7 @@
  }
  
  function changeColor(task, priority) {
+   event.preventDefault()   
    task = document.getElementById(task);
    if (priority == "h") {
     task.style.color = 'red';
