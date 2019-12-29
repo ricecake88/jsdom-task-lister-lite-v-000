@@ -36,4 +36,16 @@ button {
   box-shadow: 2px 5px 5px #333;
 }
 
+.low {
+  color: blue;
+}
+.high {
+  color: red;
+}
+.normal {
+  color: green;
+}
+}
+}
+}
 
