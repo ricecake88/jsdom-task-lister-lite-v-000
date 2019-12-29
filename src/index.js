@@ -57,11 +57,6 @@ function setColor(){
    
  }
  
- function monitorPriority(event) {
-
-
-   
- }
 
 document.addEventListener("DOMContentLoaded", () => {
  form = document.getElementById("create-task-form");
