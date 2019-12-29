@@ -6,7 +6,8 @@
 
 function setColor(){
      event.preventDefault()
-  console.log(this.value);
+   task.style.color = color;     
+  console.log(task);
   
 }
 
