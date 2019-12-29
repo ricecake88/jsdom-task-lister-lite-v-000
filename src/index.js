@@ -4,6 +4,10 @@
    element.parentNode.parentNode.removeChild(element.parentNode)
  }
 
+function setColor() {
+  
+}
+
  function createPriorityForm() {
    event.preventDefault()
    let priorities = ['high', 'medium', 'low'];
