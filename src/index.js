@@ -7,7 +7,7 @@
 function setColor(){
      event.preventDefault()
      if (this.value == "medium")
-   task.style.color = blue;     
+   task.style.color = #fff000;     
   console.log(task);
   
 }
