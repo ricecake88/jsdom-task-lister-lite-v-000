@@ -4,7 +4,8 @@
    element.parentNode.parentNode.removeChild(element.parentNode)
  }
 
-function monitorPriority(){
+function setColor(){
+  console.log("Changed");
   
 }
 
