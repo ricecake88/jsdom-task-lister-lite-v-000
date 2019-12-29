@@ -5,6 +5,7 @@
  }
 
 function setColor(){
+     event.preventDefault()
   console.log("Changed");
   
 }
@@ -57,11 +58,8 @@ function setColor(){
  }
  
  function monitorPriority(event) {
-   event.preventDefault()
-   let selects = document.getElementsByName("dropdown");
-   for (let i = 0; i < selects.length; i++) {
-     selects[i].addEventListener("change", setColor);
-   }
+
+
    
  }
 
@@ -69,6 +67,9 @@ document.addEventListener("DOMContentLoaded", () => {
  form = document.getElementById("create-task-form");
  form.addEventListener("submit", submittedTask);
 
-
+   let selects = document.getElementsByName("dropdown");
+   for (let i = 0; i < selects.length; i++) {
+     selects[i].addEventListener("change", setColor);
+   }
 
 });
