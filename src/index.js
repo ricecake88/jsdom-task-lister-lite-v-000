@@ -18,7 +18,7 @@ function setColor(task) {
    priority_form.setAttribute("name", "priorityForm")
    priority_form.appendChild(select_priority);
    select_priority.setAttribute("name", "dropdown");
-   select_priority.setAttribute("onClick", "setColor("+unique_task_id+")");
+   select_priority.onclick = setColor(task);
    select_priority.setAttribute("class", "medium");
    for (let i = 0; i < priorities.length; i++) {
       let option = document.createElement("option");
