@@ -49,7 +49,7 @@ function setColor(){
      input.value = "";
    }
    
-   monitorPriority();
+   monitorPriority(new_task.id);
  }
 
  function submittedTask(event) {
@@ -59,12 +59,16 @@ function setColor(){
    
  }
  
- function monitorPriority() {
-      let selects = document.getElementsByName("dropdown");
-   console.log(selects)
+ function monitorPriority(task_item) {
+   let selects = document.getElementsByName("dropdown");
+   console.log(selects);
    for (let i = 0; i < selects.length; i++) {
-     selects[i].addEventListener("change", setColor);
+     selects[i].addEventListener("change", function() {
+       color = setColor(this);
+     });
    }
+   task = document.getElementById(task_item);
+   task.style.color = color;
  }
 
 document.addEventListener("DOMContentLoaded", () => {
