@@ -7,6 +7,7 @@
 function setColor(){
      event.preventDefault()
   console.log("Changed");
+  console.log(this);
   
 }
 
