@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
  form.addEventListener("submit", submittedTask);
 
    let selects = document.getElementsByName("dropdown");
+   console.log(selects)
    for (let i = 0; i < selects.length; i++) {
      selects[i].addEventListener("change", setColor);
    }
