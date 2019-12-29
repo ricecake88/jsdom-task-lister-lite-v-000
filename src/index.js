@@ -5,8 +5,8 @@
  }
 
 function setColor(task) {
- task = document.getElementById(task);
- task.value.style.color = red;
+ task_item = document.getElementById(task);
+ task_item.value.style.color = red;
 }
 
  function createPriorityForm(unique_task_id) {
