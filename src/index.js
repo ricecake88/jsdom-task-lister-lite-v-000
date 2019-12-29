@@ -54,6 +54,11 @@ function monitorPriority(){
    createTask(tasks);
    
  }
+ 
+ function monitorPriority(event) {
+   event.preventDefault()
+   
+ }
 
 document.addEventListener("DOMContentLoaded", () => {
  form = document.getElementById("create-task-form");
