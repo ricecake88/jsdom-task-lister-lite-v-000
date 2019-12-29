@@ -57,15 +57,18 @@ function setColor(){
    
  }
  
+ function monitorPriority() {
+      let selects = document.getElementsByName("dropdown");
+   console.log(selects)
+   for (let i = 0; i < selects.length; i++) {
+     selects[i].addEventListener("change", setColor);
+   }
+ }
 
 document.addEventListener("DOMContentLoaded", () => {
  form = document.getElementById("create-task-form");
  form.addEventListener("submit", submittedTask);
 
-   let selects = document.getElementsByName("dropdown");
-   console.log(selects)
-   for (let i = 0; i < selects.length; i++) {
-     selects[i].addEventListener("change", setColor);
-   }
+
 
 });
