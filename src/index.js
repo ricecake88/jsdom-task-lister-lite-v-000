@@ -57,7 +57,10 @@ function monitorPriority(){
  
  function monitorPriority(event) {
    event.preventDefault()
-   let selects = document.getElementsByName("task_element");
+   let selects = document.getElementsByName("dropdown");
+   for (let i = 0; i < selects.length; i++) {
+     selects[i].addEventListener("")
+   }
    
  }
 
