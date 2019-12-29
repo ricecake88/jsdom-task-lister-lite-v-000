@@ -6,7 +6,7 @@
 
 function setColor(task) {
  task = document.getElementById(task);
- task.value.styl
+ task.value.style.color = color;
 }
 
  function createPriorityForm(unique_task_id) {
