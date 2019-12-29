@@ -66,6 +66,7 @@
      task_list.appendChild(new_task);
      input.value = "";
    }
+   console.log(new_task.id)
     monitorTaskPriority(new_task.id);
  }
 
