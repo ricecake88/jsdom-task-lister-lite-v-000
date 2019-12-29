@@ -8,7 +8,7 @@ function setColor() {
   
 }
 
- function createPriorityForm() {
+ function createPriorityForm(unique_task) {
    event.preventDefault()
    let priorities = ['high', 'medium', 'low'];
    let priority_form = document.createElement("form")
