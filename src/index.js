@@ -19,10 +19,13 @@
       option.value = priorities[i];
       if (priorities[i] == "high") {
         option.text = "h";
+        option.setAttribute("class", "high");
       } else if (priorities[i] == "medium") {
         option.text = 'm';
+        option.setAttribute("class", "normal")
       } else if (priorities[i] == "low") {
         option.text = 'l';
+        option.setAttribute("class", "low")        
       }
       select_priority.appendChild(option); 
    }
