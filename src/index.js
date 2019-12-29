@@ -48,7 +48,7 @@
  function monitorTaskPriority(task_id) {
   task = document.getElementById("task_id");
   priorityForm = document.getElementById("priorityForm");
-  priorityForm.addEventListener("submit", changeColor(task_id));   
+  priorityForm.addEventListener("submit", changeColor(task_id, priorityForm.value));   
  }
 
  
