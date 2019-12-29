@@ -48,6 +48,8 @@ function setColor(){
      task_list.appendChild(new_task);
      input.value = "";
    }
+   
+   monitorPriority();
  }
 
  function submittedTask(event) {
