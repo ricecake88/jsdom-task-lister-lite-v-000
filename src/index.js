@@ -5,10 +5,13 @@
  }
 
 function setColor(){
-     event.preventDefault()
-     if (this.value == "medium")
-   task.style.color = 'blue';     
-  console.log(task);
+  event.preventDefault()
+  if (this.value == "medium")
+    task.style.color = 'blue';
+  else if (this.value == "high")
+    task.style.color = 'red';
+  else if (this.value == "low")
+    task.style.color = 'green';
   
 }
 
